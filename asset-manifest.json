@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/e-commerce-front/static/css/main.6d12e6c6.chunk.css",
-    "main.js": "/e-commerce-front/static/js/main.0924aa80.chunk.js",
-    "main.js.map": "/e-commerce-front/static/js/main.0924aa80.chunk.js.map",
-    "runtime~main.js": "/e-commerce-front/static/js/runtime~main.f03e0a80.js",
-    "runtime~main.js.map": "/e-commerce-front/static/js/runtime~main.f03e0a80.js.map",
-    "static/css/2.5ab72513.chunk.css": "/e-commerce-front/static/css/2.5ab72513.chunk.css",
-    "static/js/2.f2e30447.chunk.js": "/e-commerce-front/static/js/2.f2e30447.chunk.js",
-    "static/js/2.f2e30447.chunk.js.map": "/e-commerce-front/static/js/2.f2e30447.chunk.js.map",
-    "index.html": "/e-commerce-front/index.html",
-    "precache-manifest.d7c9ab3187d64604f78e621463dbcbff.js": "/e-commerce-front/precache-manifest.d7c9ab3187d64604f78e621463dbcbff.js",
-    "service-worker.js": "/e-commerce-front/service-worker.js",
-    "static/css/2.5ab72513.chunk.css.map": "/e-commerce-front/static/css/2.5ab72513.chunk.css.map",
-    "static/css/main.6d12e6c6.chunk.css.map": "/e-commerce-front/static/css/main.6d12e6c6.chunk.css.map"
+    "main.css": "/ecommerce-front/static/css/main.6d12e6c6.chunk.css",
+    "main.js": "/ecommerce-front/static/js/main.0924aa80.chunk.js",
+    "main.js.map": "/ecommerce-front/static/js/main.0924aa80.chunk.js.map",
+    "runtime~main.js": "/ecommerce-front/static/js/runtime~main.d94dac29.js",
+    "runtime~main.js.map": "/ecommerce-front/static/js/runtime~main.d94dac29.js.map",
+    "static/css/2.5ab72513.chunk.css": "/ecommerce-front/static/css/2.5ab72513.chunk.css",
+    "static/js/2.f2e30447.chunk.js": "/ecommerce-front/static/js/2.f2e30447.chunk.js",
+    "static/js/2.f2e30447.chunk.js.map": "/ecommerce-front/static/js/2.f2e30447.chunk.js.map",
+    "index.html": "/ecommerce-front/index.html",
+    "precache-manifest.fabfe47634b810089ae57de078f1e5fb.js": "/ecommerce-front/precache-manifest.fabfe47634b810089ae57de078f1e5fb.js",
+    "service-worker.js": "/ecommerce-front/service-worker.js",
+    "static/css/2.5ab72513.chunk.css.map": "/ecommerce-front/static/css/2.5ab72513.chunk.css.map",
+    "static/css/main.6d12e6c6.chunk.css.map": "/ecommerce-front/static/css/main.6d12e6c6.chunk.css.map"
   }
 }
