@@ -1,0 +1,152 @@
+.btn, .jumbotron, .nav :hover {
+    border-radius: 0px;
+}
+
+.jumbotron h2{
+    margin-top: 35px;
+}
+
+.jumbotron {
+    width: 30wh;
+    height: 30vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    border: 0;
+}
+ 
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ 
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ 
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.nav-tabs {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom: 0px;
+}
+.logo{
+    width: 30px;
+    height: 35px;
+    margin: 2.5px 5px 1px 5px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+
+/*single product page product-name*/
+.name {
+    background-color: indigo;
+    color: white;
+    font-weight: bold;
+}
+
+/*black shade 10-1*/
+.black-10 {
+    background: #f2f2f2;
+}
+.black-9 {
+    background: #e6e6e6;
+}
+.black-8 {
+    background: #d9d9d9;
+}
+.black-7 {
+    background: #cccccc;
+}
+.black-6 {
+    background: #bfbfbf;
+}
+.black-5 {
+    background: #b3b3b3;
+}
+
+/*cart badge*/
+.cart-badge, .cart-badge:hover{
+    width: 18px; /* Set the width */
+    height: 18px; /* Set the height equal to width */
+    border-radius: 50%; /* Ensure the badge is a circle */
+    padding: 0px; /* Padding inside the badge */
+    font-size: 12px; /* Adjust font size as needed */
+    color: rgb(8,124,252); /* Background color */
+    font-weight: 900 ;
+    background-color: white; /* Text color */
+    display: flex; /* Use flex to center the content inside */
+    justify-content: center; /* Align text horizontally */
+    align-items: center; /* Align text vertically */
+    border: rgb(8,124,252) solid 1px
+}
+
+.cartNumber {
+    margin-top: 14px;
+}
+
+.no-hover:hover {
+    pointer-events: none;
+}
+
+
+.simbolsCart, .simbolsCart:hover {
+    width: 40px;                /* Set the width */
+    height: 40px;               /* Set the height equal to the width */
+    border-radius: 50%;         /* Make the button circular */
+    font-size: 22px;            /* Adjust the font size */
+    text-align: center;         /* Center the text horizontally */
+    display: flex;              /* Use flexbox for centering */
+    align-items: center;        /* Vertically center the text */
+    justify-content: center;    /* Horizontally center the text */
+    box-sizing: border-box;     /* Ensure border/padding don't distort the shape */
+    padding-bottom: 10px;
+    outline: none;
+    color: white;
+}
+
+.cartao {
+    transition: box-shadow 0.2s ease-in-out;
+    
+}
+
+.cartao:hover {
+    box-shadow: 0px 9px 17px rgba(0, 0, 0, 0.3);
+}
+
+.addButton {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
