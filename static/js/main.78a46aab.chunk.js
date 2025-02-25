@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{15:function(e,n,t){e.exports=t(25)},25:function(e,n,t){"use strict";t.r(n);var a=t(0),r=t.n(a),o=t(12),c=t.n(o),l=t(13);var m=()=>r.a.createElement("div",null,"Hello from react");c.a.render(r.a.createElement(l.a,{basename:"/ecommerce-front"},r.a.createElement(m,null)),document.getElementById("root"))}},[[15,1,2]]]);
-//# sourceMappingURL=main.78a46aab.chunk.js.map
