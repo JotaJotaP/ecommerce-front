@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ecommerce-front/static/css/main.f5da1b96.chunk.css",
+    "main.js": "/ecommerce-front/static/js/main.285548eb.chunk.js",
+    "main.js.map": "/ecommerce-front/static/js/main.285548eb.chunk.js.map",
+    "runtime~main.js": "/ecommerce-front/static/js/runtime~main.d94dac29.js",
+    "runtime~main.js.map": "/ecommerce-front/static/js/runtime~main.d94dac29.js.map",
+    "static/css/2.97a18058.chunk.css": "/ecommerce-front/static/css/2.97a18058.chunk.css",
+    "static/js/2.50be0eff.chunk.js": "/ecommerce-front/static/js/2.50be0eff.chunk.js",
+    "static/js/2.50be0eff.chunk.js.map": "/ecommerce-front/static/js/2.50be0eff.chunk.js.map",
+    "index.html": "/ecommerce-front/index.html",
+    "precache-manifest.6e8ab4686a737e4adb410abd069fa92a.js": "/ecommerce-front/precache-manifest.6e8ab4686a737e4adb410abd069fa92a.js",
+    "service-worker.js": "/ecommerce-front/service-worker.js",
+    "static/css/2.97a18058.chunk.css.map": "/ecommerce-front/static/css/2.97a18058.chunk.css.map",
+    "static/css/main.f5da1b96.chunk.css.map": "/ecommerce-front/static/css/main.f5da1b96.chunk.css.map"
+  }
+}
