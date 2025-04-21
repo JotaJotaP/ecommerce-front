@@ -1,27 +1,20 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom";
+import React, {useState, useEffect} from "react";
 import ShowImage from "../core/ShowImage"
 import moment from "moment"
 import { Fragment } from "react";
 import { addItem } from "./CartHelpers";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min.js";
+import CartSidebar from "./CartSidebar";
 
 
-const Card = ({ product, imageStyle, showViewProductButton = true, stock = true }) => {
+const SingleProductCard = ({ product, imageStyle, setSidebar}) => {
     const [redirect, setRedirect] = useState(false)
-
-    const showViewButton = (showViewProductButton) => {
-        return (
-            showViewProductButton && ( //só faz o que está dentro dos parentizes se showViewProductButton for true
-                <button className="btn btn-outline-primary mt-2 mb-2">View Product</button>
-            )
-        )
-    }
 
     const addToCart = () => {
             addItem(product, () => {
-                setRedirect(true)
+                // setRedirect(true)
             })
+            setSidebar(true)
         }
     
         const shouldRedirect = (redirect) => {
@@ -64,7 +57,7 @@ const Card = ({ product, imageStyle, showViewProductButton = true, stock = true 
             <div className="p-3 col-6" >
 
                 <div className=" card card-body" style={{ justifyContent: "center", alignItems: "center" }}>
-                {shouldRedirect(redirect)}
+                {/* {shouldRedirect(redirect)} */}
 
                     <ShowImage item={product} url="product" style={imageStyle} />
                 </div>
@@ -79,9 +72,6 @@ const Card = ({ product, imageStyle, showViewProductButton = true, stock = true 
                     <p className="pt-1">Category: {product.category && product.category.name}</p>
                     <div className="row" style={{ display: "flex", justifyContent: "center" }}>
                         {showAddToCartButton()}
-                        <Link to={`/product/${product._id}`}>
-                            {showViewButton(showViewProductButton)}
-                        </Link>
                     </div>
                     <p className="mt-3">Added {moment(product.createdAt).fromNow()}</p>
                     {showStok(product.quantity)}
@@ -92,4 +82,4 @@ const Card = ({ product, imageStyle, showViewProductButton = true, stock = true 
     )
 }
 
-export default Card
+export default SingleProductCard

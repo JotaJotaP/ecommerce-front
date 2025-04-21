@@ -4,10 +4,16 @@ import Layout from "../core/Layout";
 import { signin, authenticate, isAuthenticated } from "../auth/index"
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
+/*
+ email: 'joao@gmail.com',
+        password: 'jotajota27',
+*/
+
+
 const SignIn = () => {
     const [values, setValues] = useState({
-        email: 'joao@gmail.com',
-        password: 'jotajota27',
+        email: 'usergg@gmail.com',
+        password: 'user1234',
         error: '',
         loading: false,
         redirectToReferrer: false

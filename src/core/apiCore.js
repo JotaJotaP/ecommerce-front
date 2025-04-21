@@ -46,16 +46,25 @@ export const getFilteredProducts = (skip, limit, filters = {}) => {
         }) 
 }
 
-export const list = params => {
-    const query = queryString.stringify(params)
+export const list = (params) => {
+    const query = queryString.stringify(params);
+
     return fetch(`${API}/products/search?${query}`, {
-        method: 'GET',
+        method: "GET",
     })
-        .then(response => {
-            return response.json()
+        .then(async (response) => {
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                throw new Error(errorMessage || "An error occurred");
+            }
+            return response.json();
         })
-        .catch(err => console.log(err))
-}
+        .catch((err) => {
+            console.error("Error fetching products:", err.message);
+            return { error: err.message };
+        });
+};
+
 
 export const read = (productId) => {
     return fetch(`${API}/product/${productId}`, {

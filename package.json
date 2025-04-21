@@ -16,7 +16,8 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
-    "react-toastify": "^6.0.0"
+    "react-toastify": "^6.0.0",
+    "swiper": "^9.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "3.2.3"
+    "gh-pages": "^3.2.3"
   }
 }

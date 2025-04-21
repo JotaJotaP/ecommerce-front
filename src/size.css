@@ -1,0 +1,90 @@
+/* Extra large screens (≥1200px) */
+@media (min-width: 1200px) {
+
+}
+
+/* Large screens (≥992px) */
+@media (min-width: 992px) and (max-width: 1199px)  {
+    .jumbotron {
+        background-color: lightyellow;
+    }
+}
+
+/* Medium screens (≥768px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron {
+    }
+}
+
+/* Small screens (≥576px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .jumbotron {
+        background-color: lightcoral;
+    }
+}
+
+/* Extra small screens (<576px) */
+@media (min-width: 320px) and (max-width: 575px) {
+    .logo{
+        width: 18px;
+        height: 21px;
+        margin: 6px 7px 0px 7px;
+    }
+    .nav-link{
+        padding: 5px 6px 5px 6px;
+        /* display: flex;
+        align-items: center; */
+        height: 96%;
+    }
+    .nav.item{
+        margin-bottom: 0;
+    }
+    .nav {
+        font-size: 14px;
+    }
+    .navCart{
+        padding-top: 0px;
+        padding-bottom: 0;
+        width: 60px;
+        height: 100%;
+    }
+    .jumbotron .title{
+        font-size: 25px;
+    }
+    .jumbotron .description {
+        font-size: 17px;
+    }
+    .jumbotron{
+        padding: 1em;
+    }
+    .cartSimbol {
+        padding-top: 4px;
+    }
+    .bookPhoto{
+        height: 100px; 
+        width: 100%
+    }
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 15px; /* Adjust padding to make it a square */
+    border-radius: 5px; /* Optional: rounded corners */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    color: white; /* Change arrow color */
+    font-size: 20px;
+}
+
+.swiper-button-disabled {
+    display: none !important; /* Completely remove from layout */
+}

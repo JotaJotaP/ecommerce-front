@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Layout from "../core/Layout"
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
@@ -29,11 +29,23 @@ const Dashboard = () => {
             <div className="card">
                 <h4 className="card-header">User Links</h4>
                 <ul className="list-group">
-                    <li className="list-group-item"><Link className="nav-link" to="/cart">My cart</Link></li>
-                    <li className="list-group-item"><Link className="nav-link" to={`/profile/${_id}`}>Update Profile</Link></li>
+                    <li className="list-group-item">
+                        <Link className="nav-link d-flex justify-content-between align-items-center" to="/cart">
+                            My Cart
+                            <span className="material-symbols-outlined">shopping_cart</span>
+                        </Link>
+                    </li>
+        
+                    <li className="list-group-item">
+                        <Link className="nav-link d-flex justify-content-between align-items-center" to={`/profile/${_id}`}>
+                            Update Profile 
+                            <span className="material-symbols-outlined">manage_accounts</span>
+                        </Link>
+                    </li>
                 </ul>
             </div>
-        )
+        );
+        
     }
 
     const userInfo = () => {
@@ -66,7 +78,7 @@ const Dashboard = () => {
                                         <h6>Purchased date: <span style={{ fontWeight: 400 }}>{moment(h.createdAt).fromNow()}</span></h6>
                                     </div>
                                 ))}
-                                <hr/>
+                                <hr />
                             </div>
                         ))}
                     </li>
@@ -78,8 +90,11 @@ const Dashboard = () => {
     return (
         <Layout layoutStyle={{ padding: "35px" }} title="Dashboard" description={<span>Good day, <strong>{name}</strong>!</span>} className="container">
             <div className="row">
-                <div className="col-3">{userLinks()}</div>
-                <div className="col-9">{userInfo()}{purchaseHistory(history)}</div>
+
+                        <div className="col-12 mb-5">{userLinks()}</div>
+                        <div className="col-12">{userInfo()}
+                            {purchaseHistory(history)}</div>
+
             </div>
         </Layout>
     )

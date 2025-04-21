@@ -36,12 +36,12 @@ export const itemTotal = () => {
     return 0
 }
 export const getCart = () => {
-    if(typeof window != 'undefined') {
-        if(localStorage.getItem('cart')) {
-            return JSON.parse(localStorage.getItem('cart'))
-        }
+    if (typeof window !== "undefined") {
+        // Retrieve the cart from localStorage if it's available
+        const cart = localStorage.getItem("cart");
+        return cart ? JSON.parse(cart) : []; // Return parsed cart or empty array
     }
-    return []
+    return [];
 }
 
 export const updateItem = (productId, count) => {
@@ -82,6 +82,5 @@ export const removeItem = (productId) => {
 export const emptyCart = (next) => {
     if(typeof window !== 'undefined'){
         localStorage.removeItem('cart')
-        next()
     }
 }

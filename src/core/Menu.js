@@ -25,8 +25,8 @@ const Menu = ({ history }) => (
                 <Link className="nav-link" to="/shop" style={isActive(history, '/shop')}>Shop</Link>
             </li>
             {isAuthenticated() && isAuthenticated().user.role === 0 && (
-                <li className="nav-item "  style={{display: "flex"}}>
-                    <Link className="nav-link "  to="/user/dashboard" style={isActive(history, '/user/dashboard')}>Dashboard</Link>
+                <li className="nav-item " >
+                    <Link className="nav-link "  to="/user/dashboard" style={isActive(history, '/user/dashboard')}>Profile</Link>
                 </li>
             )}
             {isAuthenticated() && isAuthenticated().user.role === 1 && (
@@ -53,9 +53,9 @@ const Menu = ({ history }) => (
                     </li>
                 </Fragment>
             )}
-            {isAuthenticated() && <li className="nav-item ml-auto mb-0">
-                <Link className="nav-link d-flex pb-0" to="/cart" style={isActive(history, '/cart')}>
-                <i className="material-symbols-outlined m-0 pb-0" >shopping_cart</i>
+            {isAuthenticated() && <li className="nav-item ml-auto mb-0 navCart">
+                <Link className="nav-link d-flex pb-0 navCart" to="/cart" style={isActive(history, '/cart')}>
+                <i className="material-symbols-outlined cartSimbol" >shopping_cart</i>
                 <sup className="cartNumber">
                     <small className="cart-badge ">{itemTotal()}</small>
                 </sup>

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import { list } from "./apiCore"
+import { list, getFilteredProducts } from "./apiCore"
 
-const Search = ({ setFilteredResults, setSearchQuery  }) => {
+const Search = ({ setFilteredResults, setSearchQuery }) => {
     const [data, setData] = useState({
         search: "",
         category: "",
@@ -9,21 +9,34 @@ const Search = ({ setFilteredResults, setSearchQuery  }) => {
     const { search, category } = data
 
     const searchData = () => {
+        if (search === "") {
+            // If search box is empty, reset to initial 6 products
+            getFilteredProducts(0, 6, {}).then(response => {
+                if (response.error) {
+                    console.log(response.error);
+                } else {
+                    setFilteredResults(response.data); // Show initial products
+                }
+            });
+        } else {
+            // Perform search as usual
             list({ search: search || undefined, category: category || undefined }).then(response => {
                 if (response.error) {
-                    console.log(response.error)
+                    console.log(response.error);
                 } else {
-                    setFilteredResults(response) // Update filtered results in Shop
-                    // console.log(response.length)
+                    setFilteredResults(response)
                 }
-            })
-    }
-    
+            });
+        }
+    };
+
+
     const searchSubmit = (e) => {
         e.preventDefault()
         searchData()
     }
-    
+
+
 
     const handleChange = name => event => {
         setData({ ...data, [name]: event.target.value })
@@ -51,7 +64,7 @@ const Search = ({ setFilteredResults, setSearchQuery  }) => {
             </span>
         </form>
     )
-    
+
 
     return (
         <div className="row">
